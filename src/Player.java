@@ -8,6 +8,21 @@ public class Player {
     private Random brain = new Random();
 
     /**
+     * Imię gracza: pole, getter i setter.
+     */
+    private String name = "Domyślny Janusz";
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (name != null && !name.isEmpty()) {
+            this.name = name;
+        }
+    }
+
+    /**
      * Metoda "odgadująca" liczbę oczek wyrzuconą na kostce.
      *
      * @return liczb oczek (1-6)
