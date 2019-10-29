@@ -16,6 +16,9 @@ public class PioGame {
      */
     public static void main(String[] args) {
 
+        // gracz, czyli obiekt klasy Player
+        Player player = new Player();
+
         Random rand = new Random();     //obiekt losujący
         int number;                     //wylosowana liczba
         int guess;                      //propozycja (strzał) gracza
@@ -26,7 +29,7 @@ public class PioGame {
             number = rand.nextInt(6) + 1;
             System.out.println("Kostka: " + number);
 
-            guess = rand.nextInt(6) + 1;
+            guess = player.guess(); // odgadywanie zlecamy obiektowi klasy Player
             System.out.println("Gracz: " + guess);
 
             if (number != guess) {
