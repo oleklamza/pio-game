@@ -8,6 +8,15 @@ public class Player {
     private Random brain = new Random();
 
     /**
+     * Konstruktory
+     */
+    public Player() {}
+
+    public Player(String name) {
+        setName(name);
+    }
+
+    /**
      * Imię gracza: pole, getter i setter.
      */
     private String name = "Domyślny Janusz";

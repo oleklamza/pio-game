@@ -17,8 +17,8 @@ public class PioGame {
     public static void main(String[] args) {
 
         // gracz, czyli obiekt klasy Player
-        Player player = new Player();
-        player.setName("Ziuta");
+        Player player = new Player("Marian");
+//        player.setName("Ziuta");
 
         Random rand = new Random();     //obiekt losujący
         int number;                     //wylosowana liczba
