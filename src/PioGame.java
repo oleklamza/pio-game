@@ -20,7 +20,7 @@ public class PioGame {
         Player player = new PlayerComp();
 
         try {
-            player.setName(null);
+            player.setName("Ma~");
         } catch (IllegalArgumentException ex) {
             System.err.println("BŁĄD! " + ex.getMessage());
         }
