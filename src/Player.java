@@ -28,6 +28,8 @@ public class Player {
     public void setName(String name) {
         if (name != null && !name.isEmpty()) {
             this.name = name;
+        } else {
+            System.err.println("Nieprawidłowe imię!");
         }
     }
 
