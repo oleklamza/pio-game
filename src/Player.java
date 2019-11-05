@@ -3,10 +3,7 @@ import java.util.Random;
 /**
  * Klasa reprezentująca gracza.
  */
-public class Player {
-    // mózg gracza odgadujący liczby
-    private Random brain = new Random();
-
+public abstract class Player {
     /**
      * Konstruktory
      */
@@ -28,16 +25,13 @@ public class Player {
     public void setName(String name) {
         if (name != null && !name.isEmpty()) {
             this.name = name;
+        } else {
+            System.err.println("Nieprawidłowe imię");
         }
     }
 
     /**
-     * Metoda "odgadująca" liczbę oczek wyrzuconą na kostce.
-     *
-     * @return liczb oczek (1-6)
+     * Abstrakcyjna metoda implementowana w klasach potomnych.
      */
-    public int guess() {
-        return brain.nextInt(6) + 1;
-    }
-
+    public abstract int guess();
 }
