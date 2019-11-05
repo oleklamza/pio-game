@@ -26,7 +26,7 @@ public abstract class Player {
         if (name != null && !name.isEmpty()) {
             this.name = name;
         } else {
-            System.err.println("Nieprawidłowe imię");
+            throw new IllegalArgumentException("Nieprawidłowe imię.");
         }
     }
 

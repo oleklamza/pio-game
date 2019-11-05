@@ -19,6 +19,12 @@ public class PioGame {
         // do zmiennej klasy Player możemy przypisać obiekt klasy PlayerHuman (polimorfizm)
         Player player = new PlayerComp();
 
+        try {
+            player.setName(null);
+        } catch (IllegalArgumentException ex) {
+            System.err.println("BŁĄD! " + ex.getMessage());
+        }
+
         Random rand = new Random();     //obiekt losujący
         int number;                     //wylosowana liczba
         int guess;                      //propozycja (strzał) gracza
