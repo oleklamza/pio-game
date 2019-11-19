@@ -20,8 +20,8 @@ public class PioGame {
     public static void main(String[] args) {
         Game game = new Game();
 
-        Player player = new PlayerComp("Janusz");
-        game.addPlayer(player);
+        game.addPlayer(new PlayerComp("Janusz"));
+        game.addPlayer(new PlayerComp("Ziuta"));
 
         game.play();
     }
