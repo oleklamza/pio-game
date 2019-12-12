@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -56,4 +57,23 @@ public class Game {
 
     }
 
+    public void printPlayers() {
+        System.out.println("### PLAYERS ###");
+        for (Player player : players) {
+            System.out.println(player.getName());
+        }
+    }
+
+    public void removePlayer(String name) {
+
+        // pierwsza wersja: klasyczna
+//        for (Iterator<Player> it = players.iterator(); it.hasNext();) {
+//            if (it.next().getName().equals(name)) {
+//                it.remove();
+//            }
+//        }
+
+        // druga wersja - zgrabniejsza
+        players.removeIf( (Player player) -> player.getName().equals(name) );
+    }
 }
