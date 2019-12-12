@@ -21,7 +21,11 @@ public class PioGame {
         Game game = new Game();
 
         game.addPlayer(new PlayerComp("Janusz"));
-        game.addPlayer(new PlayerComp("Ziuta"));
+        game.addPlayer(new PlayerComp("Janusz"));
+        game.addPlayer(new PlayerComp("Janusz"));
+        game.addPlayer(new PlayerComp("Janusz"));
+        game.addPlayer(new PlayerComp("Janusz"));
+        game.addPlayer(new PlayerComp("Janusz"));
 
         game.play();
     }
