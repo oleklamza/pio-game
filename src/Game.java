@@ -7,7 +7,14 @@ public class Game {
 
     private List<Player> players = new ArrayList();
 
-    private Random rand = new Random();     //obiekt losujący
+    private Random rand = new Random();
+
+    // pole finalne -- tylko do odczytu
+    public final Statistics stats;
+
+    public Game(Statistics stats) {
+        this.stats = stats;
+    }
 
     public void addPlayer(Player player) {
         if (!nameExists(player.getName())) {
@@ -50,6 +57,7 @@ public class Game {
                 } else {
                     System.out.println("BRAWO!");
                     repeat = false;
+                    stats.andTheWinnerIs(player);
                 }
             }
 
@@ -76,4 +84,5 @@ public class Game {
         // druga wersja - zgrabniejsza
         players.removeIf( (Player player) -> player.getName().equals(name) );
     }
+
 }

@@ -18,18 +18,30 @@ public class PioGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Game game = new Game();
+
+        Game game = new Game(new Statistics());
 
         game.addPlayer(new PlayerComp("Janusz"));
         game.addPlayer(new PlayerComp("Ziuta"));
-        game.addPlayer(new PlayerComp("Heniek"));
-
         game.printPlayers();
 
-        game.removePlayer("Ziuta");
-        game.printPlayers();
+        for (int i=0; i<100; ++i) {
+            game.play();
+        }
 
-//        game.play();
+        game.stats.print();
+
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
