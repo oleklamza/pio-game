@@ -1,3 +1,6 @@
+import players.PlayerComp;
+import statistics.WinStatistics;
+
 /**
  * Gra w odgadywanie wylosowanej liczby.
  *

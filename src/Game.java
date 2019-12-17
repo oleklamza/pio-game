@@ -1,3 +1,7 @@
+import players.Player;
+import statistics.NullStatistics;
+import statistics.Statistics;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -56,7 +60,7 @@ public class Game {
             System.out.println("Kostka: " + number);
 
             for (Player player : players) {
-                guess = player.guess(); // odgadywanie zlecamy obiektowi klasy Player
+                guess = player.guess(); // odgadywanie zlecamy obiektowi klasy players.Player
                 System.out.println("Gracz " + player.getName() + ": " + guess);
 
                 if (number != guess) {
@@ -82,7 +86,7 @@ public class Game {
     public void removePlayer(String name) {
 
         // pierwsza wersja: klasyczna
-//        for (Iterator<Player> it = players.iterator(); it.hasNext();) {
+//        for (Iterator<players.Player> it = players.iterator(); it.hasNext();) {
 //            if (it.next().getName().equals(name)) {
 //                it.remove();
 //            }

@@ -1,3 +1,7 @@
+package statistics;
+
+import players.Player;
+
 import java.util.HashMap;
 import java.util.Map;
 
