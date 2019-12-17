@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-
 /**
  * Gra w odgadywanie wylosowanej liczby.
  *
@@ -19,7 +14,7 @@ public class PioGame {
      */
     public static void main(String[] args) {
 
-        Game game = new Game(new Statistics());
+        Game game = new Game(new WinStatistics());
 
         game.addPlayer(new PlayerComp("Janusz"));
         game.addPlayer(new PlayerComp("Ziuta"));

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -12,8 +11,16 @@ public class Game {
     // pole finalne -- tylko do odczytu
     public final Statistics stats;
 
+    public Game() {
+        this(null);
+    }
+
     public Game(Statistics stats) {
-        this.stats = stats;
+        if (stats != null) {
+            this.stats = stats;
+        } else {
+            this.stats = new NullStatistics();
+        }
     }
 
     public void addPlayer(Player player) {
