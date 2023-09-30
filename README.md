@@ -6,7 +6,7 @@ Zastosowałem tu trochę nietypowy sposób pracy z repozytorium. Kolejne wersje 
 
 - [step-1](https://github.com/oleklamza/pio-game/tree/step-1): Pierwsza, najprostsza implementacja, wszystko w metodzie `main()`.
 - [step-2](https://github.com/oleklamza/pio-game/tree/step-2): Dodana **klasa** `Player` reprezentująca gracza. W klasie tylko jedna metoda int `guess()`.
-- [step-3](https://github.com/oleklamza/pio-game/tree/step-3): Do klasy `Player` dodane pole imienia (`name`). Dodany setter sprawdzający poprawność danych (na razie wykluczenie `null` i łańcucha pustego). Prywatnie, publicznie, pakietowo.
+- [step-3](https://github.com/oleklamza/pio-game/tree/step-3): Do klasy `Player` dodane **pole** imienia (`name`). Dodany **setter** sprawdzający poprawność danych (na razie wykluczenie `null` i łańcucha pustego). Prywatnie, publicznie, pakietowo.
 - [step-4](https://github.com/oleklamza/pio-game/tree/step-4): **Konstruktory** w klasie `Player`. Imię domyślne.
 - [step-5](https://github.com/oleklamza/pio-game/tree/step-5): Dodana klasa `PlayerHuman`, która **dziedziczy** po `Player` i wprowadza inny sposób odgadywania.
 - [step-6](https://github.com/oleklamza/pio-game/tree/step-6): Poprawiona struktura klas graczy: **abstrakcyjna klasa** bazowa `Player` z abstrakcyjną metodą `guess()`. Wprowadzona klasa `PlayerComp`.
